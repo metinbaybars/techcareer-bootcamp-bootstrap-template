@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    .topNav {
+      overflow: hidden;
+      background-color: #0b3c4b;
+      display: flex;
+      text-transform: capitalize;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+    }
+    .topNav h2 {
+      color: #f2f2f2;
+      font-size: 50px;
+      padding-left: 10%;
+    }
+
+    .topNav-right a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      padding-left: 50px;
+    }
+    .topNav-right a:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(161, 203, 231);
+      border-radius: 10%;
+    }
+
+    .page-center {
+      overflow: hidden;
+      background-color: #3cd3ad;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .page-center-text {
+      text-align: center;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: x-large;
+      padding-bottom: 50px;
+    }
+    .page-second {
+      overflow: hidden;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+    .page-second-header {
+      text-align: center;
+      text-transform: uppercase;
+      color: #0b3c4b;
+      font-size: 40px;
+      font-family: monospace;
+      font-weight: bolder;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .images {
+      margin-top: 20px;
+      display: flex;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .row-1,
+    .row-2 {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .row-1 img,
+    .row-2 img {
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+      border-radius: 10%;
+    }
+    .last-part {
+      overflow: hidden;
+      background-color: #3cd3ad;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+    }
+    .last-part-text {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-size: x-large;
+      padding-bottom: 50px;
+    }
+    .last-part-text h3 {
+      font-size: smaller;
+      position: relative;
+      align-content: center;
+      padding-bottom: 40px;
+    }
+    .last-part-text a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 14px, 16px;
+      font-size: 25px;
+      transition: color 0.3s;
+    }
+    .last-part-text a:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(43, 178, 240);
+      border-radius: 5px;
+      transform: scale(1.2);
+    }
+  </style>
+  <body>
+    <div class="topNav">
+      <h2>start bootstrap</h2>
+      <div class="topNav-right">
+        <a href="#contact">portfolio</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+
+    <div class="page-center">
+      <div class="picture">
+        <img src="images\avatarpic.png" alt="Avatar" width="400px" />
+      </div>
+      <div class="page-center-text">
+        <h1>start bootstrap</h1>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <h2 style="font-size: medium">
+          Graphic Artist - web Designer - Illustrator
+        </h2>
+      </div>
+    </div>
+    <div class="page-second">
+      <div class="page-second-header">
+        PORTFOLIO
+        <i class="fa fa-star" aria-hidden="true" style="padding-top: 30px"></i>
+      </div>
+    </div>
+    <div class="images">
+      <div class="row-1">
+        <div class="image-container-1"></div>
+        <img src="images\cabin.png" alt="caib" width="400px" />
+
+        <img src="images\cake.png" alt="cake" width="400px" />
+
+        <img src="images\circus.png" alt="circus" width="400px" />
+      </div>
+      <div class="row-2">
+        <img src="images\game.png" alt="game" width="400px" />
+
+        <img src="images\safe.png" alt="safe" width="400px" />
+
+        <img src="images\submarine.png" alt="submarine" width="400px" />
+      </div>
+    </div>
+
+    <div class="last-part">
+      <div class="last-part-text">
+        <h1>ABOUT</h1>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <h3>
+          Freelancer is a free bootstrap theme created by Start Bootstrap. The
+          download includes the complete source files including HTML, CSS, and
+          JavaScript as well as optional SASS stylesheets for easy
+          customization. You can create your own custom avatar for the masthead,
+          change the icon in the dividers, and add your email address to the
+          contact form to make it fully functional!
+        </h3>
+        <a href="#freeDownload">
+          <i class="fa fa-download" aria-hidden="true"></i> Free Download</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
